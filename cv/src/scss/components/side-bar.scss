@@ -1,0 +1,37 @@
+.side-bar{
+  h2{
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  ul{
+    margin: 0 0 0.75em;
+    padding: 0 0.75em;
+    li{
+      font-size: 0.9375em;
+      border-radius: 0.26666666666666666em;
+      color: #c2c2ca;
+      padding: 0.8em;
+      transition: 0.15s;
+      svg{
+        margin-right: 0.8em;
+        fill: #c2c2ca;
+      }
+      &:hover{
+        background-color: #42424d;
+        color: #FFFFFF;
+        transition: 0.15s;
+      }
+    }
+  }
+}
+
+.side-bar li + li + li + li + li {
+  padding: 0.7692307692307693em;
+  font-size: 0.8125em;
+}
+
+.divider {
+  border-top: 1px solid #32323d;
+  margin-top: 0.5333333333333333em;
+  padding-top: 0.5333333333333333em;
+}

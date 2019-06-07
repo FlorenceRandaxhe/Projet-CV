@@ -1,0 +1,18 @@
+body{
+  font-family: $font;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  color:#72727D;
+  max-width: 125em;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  line-height: 0;
+  text-indent: -9999px;
+}

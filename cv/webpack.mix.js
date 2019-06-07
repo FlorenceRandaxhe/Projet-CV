@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('src/scss/main.scss', 'dist/css/');
+mix.sass('src/scss/main.scss', 'dist/css/').copyDirectory('src/fonts', 'dist/fonts');
 
 // Full API
 // mix.js(src, output);

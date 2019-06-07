@@ -1,0 +1,81 @@
+header div{
+  background-color: $white;
+  box-shadow: 0 1px 12px 0 $box_shadow_top;
+  padding:0.75em 1.5em;
+  display: flex;
+  align-content: center;
+  form{
+    margin-right: auto;
+  }
+  input{
+    font-size: 0.8125em; /*13px*/
+    background-color: $bg;
+    padding: 0.6153846153846154em 0 0.6923076923076923em 0.9230769230769231em;
+    border: none;
+    border-radius: 0.3076923076923077em;
+    color: #32323d;
+    transition: $trans;
+    width: 10.76923076923077em;
+    &:hover{
+      background-color: $white;
+      box-shadow: 1px 1px 3px 1px $box_shadow_top;
+      transition: $trans;
+    }
+  }
+  img{
+    border-radius: 100%;
+  }
+}
+
+button{
+  background:rgba(0,0,0,0);
+  border: none;
+  border-radius:0 4px 4px 0;
+  position: relative;
+  right: 3.230769230769231em;
+  top:0.3076923076923077em;
+}
+
+.engagez{
+  display: none;
+}
+
+header a svg{
+  fill: $text;
+  margin:0 1.125em;
+  padding:0.3125em;
+  transition: .15s;
+  &:hover{
+    border-radius: 100%;
+    background-color:$bg;
+    transition:$trans;
+  }
+}
+
+.menu_btn{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.menu_btn #burger_menu{
+  position: absolute;
+  left: -9999px;
+  line-height: 0;
+}
+
+.menu_btn label svg{
+  padding: 0.625em;
+  stroke: $side_bg;
+}
+
+.side_menu{
+  position: absolute;
+  background-color: #23232C;
+  width: 13.75em;
+  height: 100vh;
+  left: 0;
+  transform: translateX(-220px);
+  transition: 0.5s ease-in-out;
+}
+#burger_menu:checked~ .side_menu{
+  transform: translateX(0);
+}
